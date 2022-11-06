@@ -1,0 +1,19 @@
+2dof_robot_arm_assembly_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  ‰ñ“]1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“]1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“]2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“]2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ‰ñ“]3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ‰ñ“]3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
